@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>おいしいコーヒーが飲めるカフェ【ibjcafe】</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="ibjcafe" />
+  <meta name="description" content="オリジナルにこだわる最高のコーヒーとジャズが流れる癒しの空間を提供するibjcafe" />
+  <meta name="keywords" content="コーヒー, ティー, ドリップ, ラテ, モカ, ミルク" />
+</head>
+<body>
+  <h2>お問い合わせフォーム</h2>
+  <p>ご意見、ご感想をお寄せください。<br />必要項目をご記入の上、｢確認画面に進む｣をクリックしてください。</p>
+  <form action="http://www.internetacademy.jp/cgi-bin/ha4_form.cgi" method="post" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+    <legend>お問い合わせフォーム</legend>
+      <table border="1" cellpadding="4" cellspacing="0">
+        <tr>
+          <th>お名前</th>
+          <td><input name="name" type="text" value="名前を入力してください" size="40" /></td>
+        </tr>
+        <tr>
+          <th>お問い合わせ種別</th>
+          <td>
+            <input name="category" type="checkbox" id="commodity" value="1" /><label for="commodity">商品</label>
+            <input name="category" type="checkbox" id="service" value="2" /><label for="service">サービス</label>
+            <input name="category" type="checkbox" id="recruit" value="3" /><label for="recruit">採用</label>
+            <input name="category" type="checkbox" id="etc" value="4" /><label for="etc">その他</label>
+          </td>
+        </tr>
+        <tr>
+          <th>性別</th>
+          <td>
+            <input name="gender" type="radio" id="man" value="man" /><label for="man">男性</label>
+            <input name="gender" type="radio" id="woman" value="woman" /><label for="woman">女性</label>
+          </td>
+        </tr>
+        <tr>
+          <th>最寄の店舗</th>
+          <td>
+            <!-- selectをmultiple="multiple"にするとデフォルトのsize="1"が崩れる -->
+            <select>
+              <!-- optgroupのlabel="東京都"を消すとそこが空白になる       -->
+              <!-- optgroup無しで、直に<option>を記述すると新宿～川越まで繋がる -->
+              <optgroup label="東京都">   
+                <option>新宿本店</option>
+                <option>渋谷店</option>
+                <option>銀座店</option>
+              </optgroup>
+              <optgroup label="神奈川県">
+                <option>横浜店</option>
+                <option>川崎店</option>
+              </optgroup>
+              <optgroup label="埼玉県">
+                <option>浦和店</option>
+                <option>川越店</option>
+              </optgroup>
+            </select>
+
+            <!-- これもできた -->
+            <!-- <input type="checkbox" name="todofuken">新宿
+            <input type="checkbox" name="todofuken">渋谷
+            <input type="checkbox" name="todofuken">銀座
+            <input type="checkbox" name="todofuken">横浜
+            <input type="checkbox" name="todofuken">川崎
+            <input type="checkbox" name="todofuken">浦和
+            <input type="checkbox" name="todofuken">大宮 -->
+
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th>
+          <td><textarea name="content" cols="60" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <th colspan="2"><input type="image" src="images/button.gif" name="Submit" alt="確認画面に進む" /></th>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
